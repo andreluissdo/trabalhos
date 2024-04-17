@@ -1,0 +1,110 @@
+/* formatos.css */
+
+/*Classe para a logotipo */
+.logotipo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Formatação das áreas semânticas */
+header {
+    text-align: center;
+    background-color: #eca372;
+    padding: 0;
+    text-align: left;
+    height: 60px;
+}
+
+nav {
+    text-align: center;
+    background-color: #eca372;
+    padding: 0.5em 0;
+    text-align: left;
+}
+
+nav a {
+    margin: 0 1em;
+    color: #000000;
+    text-decoration: none; 
+}
+
+.main-content {
+    text-align: center;
+    padding: 2em;
+    flex: 1;
+    overflow-y: auto;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    position: bottom;
+    bottom: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+/*Características tipográficas globais */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    background-color: #eca372;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* d) Visualização no modo flex */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* e) Posicionar adequadamente as áreas semânticas */
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1fr para label e 2fr para input */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label,
+.form-group input {
+    margin: 5px;
+}
